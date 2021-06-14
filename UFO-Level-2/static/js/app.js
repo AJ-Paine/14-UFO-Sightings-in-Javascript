@@ -18,9 +18,11 @@ sightings.forEach((sighting) => {
 
 //Select filter button
 var filterButton = d3.select("#filter-btn");
+var filterForm = d3.select("form");
 
 //Create event handler for filter button
 filterButton.on("click", runFilter);
+filterForm.on("submit", runFilter);
 
 //Create runFilter function
 function runFilter() {
